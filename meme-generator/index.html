@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <!-- User input form -->
+    <!-- User Input Form -->
     <form>
         URL of image:<br>
         <input type="URL" name="imageURL" id="imageURL"><br>
@@ -16,10 +16,12 @@
         <input type="text" name="topText" id="topText"><br>
         Bottom text:<br>
         <input type="text" name="bottomText" id="bottomText"><br>
-        <button onclick="getData(); addImage();">Add Meme!</button>
-        <!--<button onclick="addImage()" type="button">Add an image</button>-->
     </form>
 
+    <!-- Submit / Generate Meme Button -->
+    <button onclick="addMeme();">Add Meme!</button>
+
+    <!-- Meme Home Start -->
     <div id="img_home"></div>
 
     <script src="js/script.js"></script>
