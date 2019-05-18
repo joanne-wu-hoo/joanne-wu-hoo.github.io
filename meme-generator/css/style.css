@@ -1,0 +1,15 @@
+/* target all ids that begin with meme" */
+[id^="meme"] {
+    position: relative;
+}
+
+#top-center{
+    position:absolute;
+    text-align: center;
+    vertical-align: top;
+}
+#bottom-center{
+    position: absolute;
+    text-align: center;
+    vertical-align: bottom;
+}
