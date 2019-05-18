@@ -1,15 +1,18 @@
-/* target all ids that begin with meme" */
 #meme{
     position: relative;
+    text-align: center;
+    float: left;
 }
 
 #top-center{
     position:absolute;
-    top: 5px;
-    right: 5px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    top: 30px;
+    width: 100%
 }
 #bottom-center{
     position: absolute;
-    bottom: 5px;
-    right: 5px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    bottom: 30px;
+    width: 100%;
 }
