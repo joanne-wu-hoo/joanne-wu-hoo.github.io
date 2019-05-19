@@ -35,11 +35,39 @@ function createMemeDiv(imageURL, topText, bottomText){
     }
 }
 
+// function addMeme(){
+//     // Get user inputed data
+//     var imageURL = document.getElementById('imageURL').value;
+//     var topText = document.getElementById('topText').value;
+//     var bottomText = document.getElementById('bottomText').value;
+
+//     // Call function to create Meme
+//     createMemeDiv(imageURL, topText, bottomText);
+
+//     // Reset form
+//     document.forms['meme_input'].reset();
+// }  
+
 function addMeme(){
     // Get user inputed data
     var imageURL = document.getElementById('imageURL').value;
     var topText = document.getElementById('topText').value;
     var bottomText = document.getElementById('bottomText').value;
+
+    // Check for valid URL
+    imageURL.addEventListener('keyup', function (event) {
+      isValidURL = imageURL.checkValidity();
+      if ( isValidURL ) {
+        submit.disabled = false;
+      } else {
+        submit.disabled = true;
+        alert("Please enter a valid URL")
+      }
+    });
+
+    submit.addEventListener('click', function (event) {
+      meme-input.submit();
+    });
 
     // Call function to create Meme
     createMemeDiv(imageURL, topText, bottomText);

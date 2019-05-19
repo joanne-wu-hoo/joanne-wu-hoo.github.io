@@ -15,6 +15,7 @@
         <h1>Meme Generator</h1>
         <p>To <u>create a meme</u> enter information into the form below. Then click "Add Meme!"</p>
         <p>To <u>delete a meme</u> click on the meme you'd like to remove.</p>
+        <br><br>
         <!-- User Input Form -->
         <form name="meme_input">
             URL of image:<br>
@@ -25,7 +26,7 @@
             <input type="text" name="bottomText" id="bottomText", placeholder="What text would you like at the bottom of the meme image?"><br>
         </form>
         <!-- Submit / Generate Meme Button -->
-        <button onclick="addMeme();">Add Meme!</button>
+        <button id = "submit" onclick="addMeme();">Add Meme!</button>
     </div>
 
     <!-- Parent Div to Hold allllll the Memes -->
