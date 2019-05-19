@@ -1,7 +1,7 @@
 /* Font styling */
 
 body {
-    font: normal 25px Verdana, Arial, sans-serif;
+    font-family: 'Roboto';font-size: 25px;
 }
 
 h1{
@@ -33,9 +33,8 @@ button{
     background-color: #4CAF50;
     border: none;
     color: white;
-    font: arial;
-
-    padding: 15px 32px;
+    font-family: 'Roboto';
+    padding: 10px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -49,9 +48,9 @@ button:hover{
 }
 
 #input_form{
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: #f2f2f2;
-    padding: 20px;
+    padding: 40px;
 }
 
 /* Meme Div Container */
