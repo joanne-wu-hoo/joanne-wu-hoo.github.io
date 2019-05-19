@@ -13,16 +13,16 @@
     <!-- Input Form Div-->
     <div id="input_form">
         <h1>Meme Generator</h1>
-        <p>To create a meme enter information into the form below. Then click "Add Meme!"</p>
-        <p>To delete a meme click on the meme you'd like to remove.</p>
+        <p>To <u>create a meme</u> enter information into the form below. Then click "Add Meme!"</p>
+        <p>To <u>delete a meme</u> click on the meme you'd like to remove.</p>
         <!-- User Input Form -->
         <form name="meme_input">
             URL of image:<br>
-            <input type="URL" name="imageURL" id="imageURL"><br>
+            <input type="URL" name="imageURL" id="imageURL", placeholder="Whats the URL for your meme image?"><br>
             Top text:<br>
-            <input type="text" name="topText" id="topText"><br>
+            <input type="text" name="topText" id="topText", placeholder="(Optional) What text would you like at the top of the meme image?"><br>
             Bottom text:<br>
-            <input type="text" name="bottomText" id="bottomText"><br>
+            <input type="text" name="bottomText" id="bottomText", placeholder="What text would you like at the bottom of the meme image?"><br>
         </form>
         <!-- Submit / Generate Meme Button -->
         <button onclick="addMeme();">Add Meme!</button>
