@@ -7,6 +7,10 @@ body {
 h1{
     text-align: center;
 }
+
+p {
+    font-style: italic;
+}
 /* Input Form */
 
 input[type=text], select {
@@ -54,6 +58,12 @@ button:hover{
 }
 
 /* Meme Div Container */
+
+#meme-container{
+    padding: 40px;
+}
+
+/* Individual Meme Divs */
 
 #meme{
     position: relative;
