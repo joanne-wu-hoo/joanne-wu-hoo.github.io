@@ -98,7 +98,8 @@ button:hover{
     color: white;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;  
-    font-size:50px;
+    font-size:70px;
+    text-transform: uppercase;
     top: 20px;
     width: 100%
 }
@@ -110,7 +111,8 @@ button:hover{
     color: white;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;  
-    font-size: 50px;
+    font-size: 70px;
+    text-transform: uppercase;
     bottom: 20px;
     width: 100%;
 }
