@@ -45,5 +45,5 @@ function addMeme(){
     createMemeDiv(imageURL, topText, bottomText);
 
     // Reset form
-    document.forms['memeInput'].reset();
+    document.forms['meme_input'].reset();
 }  
