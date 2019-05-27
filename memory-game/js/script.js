@@ -4,9 +4,15 @@ const cards = document.querySelectorAll('.memory-card');
 // Initialize variables to handle flipstate
 let hasFlippedCard = false;
 let firstCard, secondCard;
+let lockBoard = false;
 
 // Function to flip cards & assign firstCard, secondCard
 function flipCard(){
+    // if lockboard is true OR card is double clicked, return
+    if (lockBoard || this === firstCard){
+        return;
+    }
+
     // Access the cards classlist and add "flip" class
     this.classList.add('flip');
 
@@ -21,10 +27,11 @@ function flipCard(){
         secondCard = this;
         // Revert hasFlippedCard back to false
         hasFlippedCard = false;
+        // change loackBoard to true
+        lockBoard = true;
         checkForMatch();
     }
 }
-
 
 function checkForMatch(){
     if (firstCard.dataset.name === secondCard.dataset.name){
