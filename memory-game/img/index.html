@@ -36,21 +36,11 @@ function checkForMatch(){
         unflipCards();
 }
 
-function unflipCards() {
-    setTimeout(() => {
-      firstCard.classList.remove('flip');
-      secondCard.classList.remove('flip');
-  
-      resetBoard();
-    }, 1500);
-  }
-}
-
-function resetBoard() {
-    hasFlippedCard = false;
-    lockBoard = false;
-    firstCard = null;
-    secondCard = null;
+function unflipCards(){
+    setTimeout(function(){
+        firstCard.classList.remove('flip');
+        secondCard.classList.remove('flip');
+    },60000);
 }
 
 // Loop through each of these cards and add an event listener on a "click" event to execute "flipCard" function
