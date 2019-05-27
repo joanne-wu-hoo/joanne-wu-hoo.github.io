@@ -9,9 +9,8 @@ let lockBoard = false;
 // Function to flip cards & assign firstCard, secondCard
 function flipCard(){
     // if lockboard is true OR card is double clicked, return
-    if (lockBoard || this === firstCard){
-        return;
-    }
+    if (lockBoard) return;
+    if (this === firstCard) return;
 
     // Access the cards classlist and add "flip" class
     this.classList.add('flip');
@@ -25,8 +24,6 @@ function flipCard(){
     } else {
         // Second card clicked
         secondCard = this;
-        // Revert hasFlippedCard back to false
-        hasFlippedCard = false;
         // change loackBoard to true
         lockBoard = true;
         checkForMatch();
@@ -38,6 +35,7 @@ function checkForMatch(){
         // disable even listneres
         firstCard.removeEventListener('click', flipCard);
         secondCard.removeEventListener('click', flipCard);
+        resetBoard();
         return;
     } else {
         unflipCards();
@@ -59,6 +57,14 @@ function resetBoard() {
     firstCard = null;
     secondCard = null;
 }
+
+// Shuffle cards
+(function shuffle() {
+    cards.forEach(card => {
+      let ramdomPos = Math.ceil(Math.random() * 12);
+      card.style.order = ramdomPos;
+    });
+  })();
 
 // Loop through each of these cards and add an event listener on a "click" event to execute "flipCard" function
 cards.forEach(function(card){
