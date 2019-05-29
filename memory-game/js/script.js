@@ -29,17 +29,17 @@ function flipCard(){
         secondCard = this;
         // change loackBoard to true
         lockBoard = true;
-        // check for match
-        checkForMatch();
         // increment move counter
         moves++;
         counter.innerHTML = moves;
+        // check for match
+        checkForMatch();
     }
 }
 
 function checkForMatch(){
     if (firstCard.dataset.name === secondCard.dataset.name){
-        // disable even listneres
+        // disable event listners
         firstCard.removeEventListener('click', flipCard);
         secondCard.removeEventListener('click', flipCard);
         resetBoard();
@@ -63,6 +63,22 @@ function resetBoard() {
     lockBoard = false;
     firstCard = null;
     secondCard = null;
+}
+
+function resetGame(){
+    // find any flipped over cards and unflip them & add event listener back
+    flippedCards = document.querySelectorAll('.flip');
+    flippedCards.forEach(card => {
+        card.classList.remove('flip');
+        card.addEventListener('click', flipCard);
+    });
+
+    // reset board variables
+    resetBoard();
+
+    // reset moves counter
+    moves = 0;
+    counter.innerHTML = moves;  
 }
 
 // Shuffle cards
