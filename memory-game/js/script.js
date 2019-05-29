@@ -65,6 +65,13 @@ function resetBoard() {
     secondCard = null;
 }
 
+function shuffle(){
+    cards.forEach(card => {
+        let randomPos = Math.ceil(Math.random() * 12);
+        card.style.order = randomPos;
+    });
+}
+
 function resetGame(){
     // find any flipped over cards and unflip them & add event listener back
     flippedCards = document.querySelectorAll('.flip');
@@ -79,17 +86,15 @@ function resetGame(){
     // reset moves counter
     moves = 0;
     counter.innerHTML = moves;  
-}
 
-// Shuffle cards
-(function shuffle() {
-    cards.forEach(card => {
-      let ramdomPos = Math.ceil(Math.random() * 12);
-      card.style.order = ramdomPos;
-    });
-  })();
+    // shuffle cards
+    cards = shuffle(cards);
+    
+}
 
 // Loop through each of these cards and add an event listener on a "click" event to execute "flipCard" function
 cards.forEach(function(card){
     card.addEventListener('click', flipCard)
 });
+
+document.body.onload = resetGame();
