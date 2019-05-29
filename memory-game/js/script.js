@@ -54,7 +54,7 @@ function unflipCards() {
       secondCard.classList.remove('flip');
   
       resetBoard();
-    }, 1500);
+    }, 1000);
   }
 }
 
@@ -88,13 +88,15 @@ function resetGame(){
     counter.innerHTML = moves;  
 
     // shuffle cards
-    cards = shuffle(cards);
-    
+    setTimeout(()=>{
+        shuffle();
+    },1100);
 }
+
 
 // Loop through each of these cards and add an event listener on a "click" event to execute "flipCard" function
 cards.forEach(function(card){
     card.addEventListener('click', flipCard)
 });
 
-document.body.onload = resetGame();
+document.body.onload = shuffle();
