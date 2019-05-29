@@ -6,6 +6,9 @@ let hasFlippedCard = false;
 let firstCard, secondCard;
 let lockBoard = false;
 
+let moves = 0;
+let counter = document.querySelector(".moves");
+
 // Function to flip cards & assign firstCard, secondCard
 function flipCard(){
     // if lockboard is true OR card is double clicked, return
@@ -26,7 +29,11 @@ function flipCard(){
         secondCard = this;
         // change loackBoard to true
         lockBoard = true;
+        // check for match
         checkForMatch();
+        // increment move counter
+        moves++;
+        counter.innerHTML = moves;
     }
 }
 
