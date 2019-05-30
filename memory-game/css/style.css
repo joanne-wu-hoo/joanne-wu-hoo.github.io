@@ -9,20 +9,21 @@
 /* Styling for game title, reset, and move counter */
 
 .admin-panel {
-	display: inline-block;
+	display: block;
 	position: absolute;
-	left: 50%;
-	justify-content: center;
-	vertical-align: top;
+    vertical-align: top;
+    text-align: center;
+    left: 45%;
+    margin-right: -45%;
 }
 
 .button {
     background-color:#1C7CCC; 
     border: none;
-    color: white;
+    color: #ffffff;
     padding: 15px 20px;
     text-align: center;
-    font-size: 25px;
+    font-size: 3vw;
     border-radius: 8px;
   }
 
@@ -37,7 +38,7 @@ body {
     height: 100vh;
     display: flex;
     background: #060AB2;
-    font-family: 'Roboto';font-size: 25px;
+    font-family: 'Roboto';font-size: 3vw;
   }
 
 /* Styling for memory game */
@@ -81,3 +82,10 @@ body {
 .front-face{
     transform: rotateY(180deg);
 }
+
+/* Enforce max font-size for title and button */
+@media screen and (min-width: 1200px) {
+    body, .button {
+       font-size: 28px;
+    }
+  }
