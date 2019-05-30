@@ -6,6 +6,16 @@
     color: white;
 }
 
+/* Styling for game title, reset, and move counter */
+
+.admin-panel {
+	display: inline-block;
+	position: absolute;
+	left: 50%;
+	justify-content: center;
+	vertical-align: top;
+}
+
 .button {
     background-color:#1C7CCC; 
     border: none;
@@ -21,16 +31,7 @@
   transform: translateY(2px);
 }
 
-.container {
-	display: inline-block;
-	justify-content: center;
-	align-items: center;
-}
-
-.admin-panel {
-	text-align: inline-block;
-	margin-bottom: 10px;
-}
+/* Styling for body */
 
 body {
     height: 100vh;
@@ -38,6 +39,8 @@ body {
     background: #060AB2;
     font-family: 'Roboto';font-size: 25px;
   }
+
+/* Styling for memory game */
 
 .memory-game{
     width: 1045px;
