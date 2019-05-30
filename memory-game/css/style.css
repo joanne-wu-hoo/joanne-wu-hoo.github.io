@@ -23,7 +23,7 @@
     color: #ffffff;
     padding: 15px 20px;
     text-align: center;
-    font-size: 3vw;
+    font-size: 2.5vw;
     border-radius: 8px;
   }
 
@@ -38,14 +38,14 @@ body {
     height: 100vh;
     display: flex;
     background: #060AB2;
-    font-family: 'Roboto';font-size: 3vw;
+    font-family: 'Roboto';font-size: 2.5vw;
   }
 
 /* Styling for memory game */
 
 .memory-game{
-    width: 1045px;
-    height: 800px;
+    width: 800px;
+    height: 645px;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -86,6 +86,6 @@ body {
 /* Enforce max font-size for title and button */
 @media screen and (min-width: 1200px) {
     body, .button {
-       font-size: 28px;
+       font-size: 24px;
     }
   }
