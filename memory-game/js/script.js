@@ -66,13 +66,23 @@ function resetBoard() {
 }
 
 function shuffle(){
+    // lock board while shuffling
+    lockBoard = true;
+
+    // shuffle cards
     cards.forEach(card => {
         let randomPos = Math.ceil(Math.random() * 12);
         card.style.order = randomPos;
     });
+
+    // unlock board
+    lockBoard = false;
 }
 
 function resetGame(){
+    // deactivate cards
+    deactivateCards();
+
     // find any flipped over cards and unflip them & add event listener back
     flippedCards = document.querySelectorAll('.flip');
     flippedCards.forEach(card => {
@@ -80,23 +90,35 @@ function resetGame(){
         card.addEventListener('click', flipCard);
     });
 
-    // reset board variables
-    resetBoard();
-
     // reset moves counter
     moves = 0;
     counter.innerHTML = moves;  
 
+    lockBoard = true;
     // shuffle cards
     setTimeout(()=>{
         shuffle();
-    },1100);
+        activateCards();
+    },1010);
+
+    // reset board variables
+    resetBoard();
 }
 
 
 // Loop through each of these cards and add an event listener on a "click" event to execute "flipCard" function
-cards.forEach(function(card){
-    card.addEventListener('click', flipCard)
-});
+function activateCards(){
+    cards.forEach(function(card){
+        card.addEventListener('click', flipCard)
+    });   
+}
 
+function deactivateCards(){
+    cards.forEach(function(card){
+        card.removeEventListener('click', flipCard)
+    });     
+}
+
+// Shuffle on refresh
 document.body.onload = shuffle();
+document.body.onload = activateCards();
