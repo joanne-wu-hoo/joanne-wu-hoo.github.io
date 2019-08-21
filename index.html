@@ -1,117 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <title>Hi, I'm Joanne</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Hi, I'm Joanne!</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+  <!-- Custom styles for this template -->
+  <link href="css/scrolling-nav.css" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+
 </head>
-<body>
 
-<!-- Navigation Bar -->
-<div id="navbar">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-</div>
+<body id="page-top">
 
-
-<!-- Lead -->
-<div id="lead">
-        <div id="lead-content">
-            <h1>Hi, I'm Joanne!</h1>
-        </div>
-        <!-- End #lead-content -->
-        <div id="lead-overlay"></div>
-        <div id="lead-down">
-            <span>
-                <a href="#about" i class="fa fa-chevron-down" aria-hidden="true"></i></a>
-            </span>
-        </div>
-        <!-- End #lead-down -->
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Hi, I'm Joanne!</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <!-- <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
+  </nav>
 
-<!-- About -->
-<div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h2 class="heading">About Me</h2>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat. Donec
-                        eu vehicula neque. Donec viverra lorem nunc, tempus euismod eros sollicitudin ut. Quisque et tincidunt libero. Donec id pharetra justo. Proin euismod lacinia dolor, eu scelerisque justo tempus pharetra. Vivamus nunc justo, finibus
-                        ut nisl sed, euismod rhoncus nulla. Proin sed magna egestas, egestas ante et, congue eros. In consequat, mauris dapibus tincidunt suscipit, ex libero aliquet diam, at maximus risus enim non leo.
-                    </p>
-                    <br>
-                    <a href="https://drive.google.com/uc?export=download&id=1TKzmIVZLgaehU-0KDypWhEx11Ee1KB_1" download>
-                        <button class="btn"><i class="fa fa-download"></i> Download Resume</button>
-                    </a>
+  <header class="bg-primary text-white">
+    <div class="container text-center" id="about">
+      <h1>Hi, I'm Joanne!</h1><br>
+      <p class="lead">I'm a full stack engineer with experience in JavaScript (ES6), React, Redux, Python, Flask,
+        Node.js, Express, PostgreSQL, Ruby, and Ruby on Rails</p><br>
+      <p class="lead">I'm a deeply curious, flexible, and adaptive developer and I love to build awesome things with
+        code.</p><br>
+      <p class="lead">Feel free to check out my projects and get in touch. Thanks for stopping by!</p>
+    </div>
+  </header>
 
+  <!-- Floating Resume -->
+  <a href=>
+    <div class="resume-box">
+      <div class="resume">
+        <span>RESUME</span>
+      </div>
+    </div>
+  </a>
 
-                </div>
+  <!-- Projects -->
+  <section id="projects" class="bg-light">
+    <div class="container">
+      <h2>Projects</h2>
+      <!-- Project One -->
+      <div class="row">
+        <div class="col mx-auto">
+          <div class="shadow-sm bg-white rounded card mb-3 text-white project-card">
+            <h3 class="card-header bg-primary">Jobly</h3>
+            <img class="card-img-top" src="./assets/FILL_IN.png" style="height: 200px; width: 100%; display: block;"
+              alt="FILL IN">
+            <div class="card-body">
+              <p class="card-text text-secondary">Jobly is a web application for posting, viewing, and applying to job
+                applications.</p>
+              <p class="text-secondary">Hint use username: testuser and password: secret</p>
+              <div class="badge badge-success">React</div>
+              <div class="badge badge-danger">Node</div>
+              <div class="mt-3">
+                <a href="https://github.com/joanne-wu-hoo/rithm-react-jobly" class="btn btn-primary">Github Repo</a>
+                <a href="https://jobly-r12.herokuapp.com/" class="btn btn-primary">Live Site Demo</a>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-
-<!-- Projects -->
-<div id="projects" class="background-alt">
-        <h2 class="heading">Projects</h2>
-        <div class="container">
-            <div class="row">
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Project Name Here</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                        </p>
-                        <a href="#">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Project Name Here</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                        </p>
-                        <a href="#">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
+      </div>
+      <!-- Project Two -->
+      <div class="row mt-5">
+        <div class="col mx-auto">
+          <div class="shadow-sm bg-white rounded card mb-3 text-white project-card">
+            <h3 class="card-header bg-primary">Project Two</h3>
+            <img class="card-img-top" src="./assets/FILL_IN.png" style="height: 200px; width: 100%; display: block;"
+              alt="FILL IN">
+            <div class="card-body">
+              <p class="card-text text-secondary">Some quick example text to build on the card title and make up the
+                bulk of the card's content.</p>
+              <div class="badge badge-success">React</div>
+              <div class="badge badge-danger">Express</div>
+              <div class="mt-3">
+                <a href="#" class="btn btn-primary">Github Repo</a>
+                <a href="#" class="btn btn-primary">Live Site Demo</a>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-
-<!-- Contact Form -->
-<div id="contact">
-        <h2>Get in Touch</h2>
-        <div id="contact-form">
-            <form action="https://formspree.io/joannesayswu@gmail.com" method="POST">
-                <input type="hidden" name="_subject" value="Contact request from joanne-wu-hoo site" />
-                <input type="email" name="_replyto" placeholder="Your email" required>
-                <textarea name="message" placeholder="Your message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
+      </div>
+      <!-- Project Three -->
+      <div class="row mt-5">
+        <div class="col mx-auto">
+          <div class="shadow-sm bg-white rounded card mb-3 text-white project-card">
+            <h3 class="card-header bg-primary">Project Three</h3>
+            <img class="card-img-top" src="./assets/FILL_IN.png" style="height: 200px; width: 100%; display: block;"
+              alt="FILL IN">
+            <div class="card-body">
+              <p class="card-text text-secondary">Some quick example text to build on the card title and make up the
+                bulk of the card's content.</p>
+              <div class="badge badge-success">React</div>
+              <div class="badge badge-danger">Express</div>
+              <div class="mt-3">
+                <a href="#" class="btn btn-primary">Github Repo</a>
+                <a href="#" class="btn btn-primary">Live Site Demo</a>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
+  </section>
 
-<script src="js/script.js"></script>
+
+  <!-- Contact Footer -->
+  <footer id="contact" class="py-5 bg-dark">
+    <div class="container">
+      <p class="text-center text-white">Get in touch!</p>
+      <h5 class="m-0 text-center">
+        <a href="mailto:joannesayswu@gmail.com"><i class="far fa-envelope text-white"></i></a>
+        <a href="https://github.com/joanne-wu-hoo"><i class="fab fa-github text-white"></i></a>
+        <a href="https://www.linkedin.com/in/joawu/"><i class="fab fa-linkedin text-white"></i></a>
+      </h5>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom JavaScript for this theme -->
+  <script src="js/scrolling-nav.js"></script>
 
 </body>
+
 </html>
