@@ -11,11 +11,11 @@
 .resume-box {
     z-index: 100;
     position: fixed;
-    height: 3rem;
-    width: 3rem;
+    height: 3.5rem;
+    width: 3.5rem;
     border-radius: 50%;
-    background-color: white;
-    bottom: 10vh;
+    background-color: #DAA520;
+    bottom: 7vh;
     right: 7vw;
     display: -webkit-flex;
     display: flex;
@@ -25,7 +25,7 @@
     align-items: center;
     font-weight: bold;
     font-size: 0.5rem;
-    color: blue;
+    color: white;
 }
 
 span {
