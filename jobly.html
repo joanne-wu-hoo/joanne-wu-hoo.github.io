@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Jobly</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>Jobly</h1>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Content -->
+							<section id="content" class="main">
+								<span class="image main"><img src="images/pic04.jpg" alt="" /></span>
+								<!-- Background -->
+								<h2>Background</h2>
+								<p>Jobly is a web application for posting, viewing, and applying 
+									to job applications. It’s built with <b>React</b> on the frontend and 
+									<b>Express</b> on the backend.
+								</p>
+								<hr />
+								
+								<!-- Key Learnings -->	
+								<h2>Key Learnings</h2>
+								<p>&#8227; Authentication with <b>JWTs</b><br>
+									 &#8227; Hydration<br>
+									 &#8227; Writing parametized queries to <b>protect against SQL injections</b><br>
+								</p>
+								<hr />
+								
+								<!-- Challenges -->
+								<h2>Challenges</h2>
+								<p>One interesting thing I worked on during this project was 
+									implementing a <b>live search feature</b> to automatically filter
+									results as the user types. This was a challenge because we wanted 
+									to make sure we weren't firing off an API call with every keystroke. 
+								</p>
+								<p>To solve this problem, we used a <b>debounce</b>
+									function to make sure an API call only occured when a user 
+									had stopped typing in the search bar for at least 800ms.
+								</p>
+								<hr />
+
+								<!-- Improve -->
+								<h2>Further Work</h2>
+								<p>We needed to prop drill quite a bit to pass down the current 
+									logged in user’s info. One area for improvement is using the
+									<b>Context API</b> to obviate the need for prop drilling.
+								</p>
+
+								<!-- Go Back Button -->
+								<a href="https://joanne-wu-hoo.github.io" class="button primary">Back</a>
+
+							</section>
+
+
+					</div>
+
+		<!-- Footer -->
+    <footer id="footer">
+				<section>
+					<h2>Contact Info</h2>
+					<dl class="alt">
+						<dt>Email</dt>
+						<dd><a href="mailto:joannesayswu@gmail.com">joannesayswu@gmail.com</a></dd>
+					</dl>
+					<ul class="icons">
+						<li><a href="https://github.com/joanne-wu-hoo" target="_blank" class="icon brands fa-github alt"><span
+									class="label">GitHub</span></a></li>
+						<li><a href="https://www.linkedin.com/in/joawu/" target="_blank" class="icon brands fa-linkedin alt"><span
+									class="label">LinkedIn</span></a></li>
+					</ul>
+				</section>
+			</footer>
+	
+		</div>
+	
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+	
+	</body>
+	
+	</html>
