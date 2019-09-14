@@ -30,8 +30,8 @@
           <!-- Background -->
           <h2>Background</h2>
           <p>
-						A blogging app with functionality to add, edit, and delete
-						posts and comments. Built with <b>React</b> and <b>Redux</b>
+						Microblog is a blogging app with functionality to add, edit, and delete
+						posts and comments. It's built with <b>React</b> and <b>Redux</b>
           </p>
 					<hr />
 
@@ -48,7 +48,7 @@
           <h2>Challenges</h2>
           <p>
 						One of the interesting challenges in this project was thinking about 
-						the <b>best shape for our state.</b> An initial thought was to structure our state as follows: 
+						the <b>best shape for our state.</b> My initial thought was to structure our state as follows: 
 						<pre><code class="codeblock">state = {
 	posts = {
 		id: {
@@ -61,8 +61,8 @@
 	};</code></pre>
 					</p>
 					<p>
-						The structure of our state started becoming pretty <b>nested</b> though,
-						 <b>which increased the complexity of our reducer logic.</b> Furthemore,
+						The state structure started becoming pretty <b>nested</b> though,
+						 <b>which increased the complexity of the reducer logic.</b> Furthemore,
 						 since reducers must be pure functions (meaning they do not mutate data), we
 						 need to copy all ancestors in the state tree; and new object references will 
 						 <b>cause components to re-render, often unncessarily.</b>
@@ -71,7 +71,8 @@
 						I had a feeling there was a better shape for our state, so after the project, 
 						I did some research on best practices and learned about normalizing 
 						state shape.
-					</hr>
+					</p>
+					<hr/>
 					
 					<!-- Further Work -->
 					<h2>Further Work</h2>
@@ -116,9 +117,7 @@
 	References:	<a href="https://redux.js.org/recipes/structuring-reducers/normalizing-state-shape">Redux Documentation: Normalizing State Shape</a>
 	<hr />
 	<!-- Go Back Button -->
-       <a href="https://joanne-wu-hoo.github.io" class="button primary"
-            >Back</a
-          >
+       <a href="https://joanne-wu-hoo.github.io/#projects" class="button primary">Back</a>
         </section>
       </div>
 
