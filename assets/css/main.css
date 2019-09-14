@@ -3787,7 +3787,7 @@ input, select, textarea {
 		}
 
 /** Add shadows to project images */
-#project-image{
+.project-image{
 	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19);
 	text-align: center;
 }
