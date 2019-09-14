@@ -30,7 +30,8 @@
           <!-- Background -->
           <h2>Background</h2>
           <p>
-            Microblog is a blogging app built with <b>React</b> and <b>Redux</b>
+						A blogging app with functionality to add, edit, and delete
+						posts and comments. Built with <b>React</b> and <b>Redux</b>
           </p>
 					<hr />
 
@@ -47,13 +48,7 @@
           <h2>Challenges</h2>
           <p>
 						One of the interesting challenges in this project was thinking about 
-						the <b>best shape for our state.</b> For each post we wanted to keep 
-						track of the post title, description, content, and comments; and for 
-						each comment we wanted to keep track of the content. We would also 
-						need to support the ability to edit & delete both posts and comments.
-					</p>
-					<p>
-						An initial thought was to structure our state as follows: 
+						the <b>best shape for our state.</b> An initial thought was to structure our state as follows: 
 						<pre><code class="codeblock">state = {
 	posts = {
 		id: {
@@ -67,7 +62,7 @@
 					</p>
 					<p>
 						The structure of our state started becoming pretty <b>nested</b> though,
-						 <b>which also increased the complexity of our reducer logic.</b> Furthemore, 
+						 <b>which increased the complexity of our reducer logic.</b> Furthemore,
 						 since reducers must be pure functions (meaning they do not mutate data), we
 						 need to copy all ancestors in the state tree; and new object references will 
 						 <b>cause components to re-render, often unncessarily.</b>
@@ -81,9 +76,9 @@
 					<!-- Further Work -->
 					<h2>Further Work</h2>
 					<p>
-						To <b>simplify reducer logic</b> and <b>improve performance</b> (by eliminating 
-						unnecessary re-rendering), I would consider <b>normalizing our state shape</b> <sup> 1</sup>
-						to look like the following:
+						To improve upon the project, I would consider <b>normalizing our state shape</b> <sup> 1</sup>.
+						Doing so would <b>simplify reducer logic</b> and <b>improve performance</b> (by eliminating 
+						unnecessary re-rendering). Our re-structured state would look something like this:
 						<pre><code>state = {
 	posts = {
 		byId: {
@@ -108,12 +103,12 @@
 	}
 };</code></pre>
 	<p>
-		This flatter state structure offers several improvements:<br>
-		<br>&#8227; The reducer logic will be simpler because there is less nesting
+		This flatter state structure offers several improvements:
 		<br>&#8227; Since each data type is separated, updating one portion of the tree 
 		(like a specific comment) will only require an update to that part of the tree, 
 		which means fewer portions of the UI (like the post) will update because its  
 		data will be unchanged.
+		<br>&#8227; The reducer logic will be simpler because there is less nesting
 		<br>&#8227;  Because each item is only defined in one place, we don't 
 		have to worry about making changes in multiple places if that item is updated.
 	</p>
@@ -132,11 +127,11 @@
 					<section id="contact">
 						<h2>Footnotes</h2>
 						<sup>1 </sup> The basic concepts of normalizing data are as follows:
-							<br>• Each type of data should get its own "slice" in the state 
-							<br>• Each "slice" should store individual items in an object,
+							<br>&#8227; Each type of data should get its own "slice" in the state 
+							<br>&#8227; Each "slice" should store individual items in an object,
 							with IDs as keys and item themselves as values
-							<br>• Any references to individual items should be done by ID
-							<br>• Arrays of IDs should be used to indicate ordering
+							<br>&#8227; Any references to individual items should be done by ID
+							<br>&#8227; Arrays of IDs should be used to indicate ordering
 						</p>
 					</section>
 					<section>
